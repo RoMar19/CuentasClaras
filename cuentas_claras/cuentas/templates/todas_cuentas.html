@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Todas la cuentas - Lista de miembros
+{% endblock %}
+
+
+{% block content %}
+
+  <p><a href="/">Tod@s</a></p>
+
+  <h1>Cuentas</h1>
+  
+  <ul>
+    {% for x in miscuentas %}
+      <li><a href="datos/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
