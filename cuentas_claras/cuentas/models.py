@@ -5,3 +5,4 @@ class Cuenta(models.Model):
   lastname = models.CharField(max_length=255)
   phone = models.IntegerField(null=True)
   amount = models.IntegerField(null=True)
+  date = models.DateField(null=True)

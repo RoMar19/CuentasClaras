@@ -1,16 +1,17 @@
 {% extends "master.html" %}
 
 {% block title %}
-  Datos de {{ mymember.firstname }} {{ mymember.lastname }}
+  Datos de {{ micuenta.firstname }} {{ micuenta.lastname }}
 {% endblock %}
 
 
 {% block content %}
-  <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+  <h1>{{ micuenta.firstname }} {{ micuenta.lastname }}</h1>
   
-  <p>Teléfono {{ mymember.phone }}</p>
-  <p>Yo puse {{ mymember.joined_date }}</p>
+  <p>Teléfono: {{ micuenta.phone }}</p>
+  <p>Yo puse: {{ micuenta.amount }}</p>
+  <p>Con fecha: {{ micuenta.date }}</p>
   
-  <p>Volver a todas las <a href="/members">cuentas</a></p>
+  <p>Volver a todas las <a href="/cuentas">cuentas</a></p>
   
 {% endblock %}

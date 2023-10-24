@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-jt+==y)+0g(&^*jghu-8_!v350%0teo36hy_3rh+qp(366=#4e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-romar19-cuentasclaras-4te3tp11vde.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['8000-romar19-cuentasclaras-1stey9pspv5.ws-eu105.gitpod.io']
+
 
 
 # Application definition
@@ -69,6 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'cuentas_claras.wsgi.application'
+
 
 
 # Database
