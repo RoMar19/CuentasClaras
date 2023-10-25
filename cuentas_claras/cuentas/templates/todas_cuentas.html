@@ -1,19 +1,20 @@
 {% extends "master.html" %}
 
 {% block title %}
-  Todas la cuentas - Lista de miembros
+  Todas la cuentas - Lista usuarios
 {% endblock %}
 
 
 {% block content %}
 
-  <p><a href="/">Tod@s</a></p>
-
-  <h1>Cuentas</h1>
+<div class="mycard">
+  <h1>USUARIOS</h1>
   
   <ul>
     {% for x in miscuentas %}
-      <li><a href="datos/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+      <li onclick="window.location = 'datos/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
     {% endfor %}
   </ul>
+</div> 
+
 {% endblock %}

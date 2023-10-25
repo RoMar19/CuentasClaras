@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jt+==y)+0g(&^*jghu-8_!v350%0teo36hy_3rh+qp(366=#4e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-romar19-cuentasclaras-1stey9pspv5.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['8000-romar19-cuentasclaras-9atamc6qkbj.ws-eu105.gitpod.io']
 
 
 
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'cuentas_claras.urls'
@@ -112,13 +113,21 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-romar19-cuentasclaras-9atamc6qkbj.ws-eu105.gitpod.io']
+
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+STATIC_ROOT = BASE_DIR / 'productionfiles'
+
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'mystaticfiles'
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

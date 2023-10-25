@@ -6,12 +6,11 @@
 
 
 {% block content %}
+<div class="mycard">
   <h1>{{ micuenta.firstname }} {{ micuenta.lastname }}</h1>
-  
   <p>Teléfono: {{ micuenta.phone }}</p>
   <p>Yo puse: {{ micuenta.amount }}</p>
-  <p>Con fecha: {{ micuenta.date }}</p>
-  
-  <p>Volver a todas las <a href="/cuentas">cuentas</a></p>
-  
+  <p>Fecha: {{ micuenta.date }}</p>
+  <p>Volver a todas los <a href="/cuentas">usuarios</a></p>
+</div>
 {% endblock %}
