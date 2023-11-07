@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jt+==y)+0g(&^*jghu-8_!v350%0teo36hy_3rh+qp(366=#4e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-romar19-cuentasclaras-9atamc6qkbj.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['8000-romar19-cuentasclaras-huwgsev8q6i.ws-eu105.gitpod.io']
 
 
 
@@ -113,7 +113,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-romar19-cuentasclaras-9atamc6qkbj.ws-eu105.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-romar19-cuentasclaras-huwgsev8q6i.ws-eu105.gitpod.io']
 
 USE_TZ = True
 
